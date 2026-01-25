@@ -1,4 +1,4 @@
-//gflag and mode
+//flag and mode
 const fs=require("fs");
 fs.writeFile(
     "secure.txt",
