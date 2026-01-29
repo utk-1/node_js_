@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
 
     if (req.url === "/") {
         res.setHeader('Content-Type', 'text/html');
-        res.write("<h1>this is my main home page</h1>");
+        res.write("<h1>this is my main home page</h1> and it is served by node js server");
     } else if (req.url === "/about_us") {
         res.write("this is my about us page");
     } else if (req.url === "/contact") {
@@ -28,7 +28,5 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
-/*
-File System Module
 
-*/
+
